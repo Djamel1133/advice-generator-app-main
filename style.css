@@ -72,6 +72,7 @@ body {
 }
 .main-container .icon-div .icon-dice:hover {
   box-shadow: 5px 5px 50px 10px hwb(150 32% 0%);
+  cursor: pointer;
 }
 
 footer {
