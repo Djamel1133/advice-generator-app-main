@@ -1,0 +1,94 @@
+/* ### Primary colors*/
+$Light-Cyan: hsl(193, 38%, 86%)  ;
+$Neon-Green: hwb(150 32% 0%)  ;
+/* ### Neutral colors*/
+$Grayish-Blue: hsl(217, 19%, 38%)  ;
+$Dark-Grayish-Blue: hsl(217, 19%, 24%)  ;
+$Dark-Blue: hsl(218, 23%, 16%)  ;
+
+/* font weight  */
+$fw-small: 500;
+$fw-medium: 800;
+/* font size  - Font size (quote): 28px */
+$fs-small:   .8125rem ; /*13px */ 
+$fs-medium:  1.75rem;  /* 28px */
+
+/* ==========================
+   Global Reset and Base Styles
+========================== */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  font-size: $fs-medium;
+  font-weight: $fw-medium;
+  text-align: center;
+  text-wrap: pretty;
+  background-color: $Dark-Blue;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  }  
+
+  .main-container{
+    max-width: max(40%, 20.5rem) ; /* take 328px notice mobile--> 375px */
+    padding: 2rem 2rem 3rem 2rem;
+    background-color: $Dark-Grayish-Blue;;
+    border-radius: 10px ;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: relative; /* to positione dice icon */
+
+    #advice_id /* h1 */{
+     color: $Neon-Green ;
+     font-size: $fs-small;
+     font-weight: $fw-small ;
+     letter-spacing: 3px;
+     font-size: $fs-small;
+     text-transform: uppercase;
+    }
+    #advice_text{
+      color: $Light-Cyan ;
+      font-size: $fs-medium; 
+      font-weight: 500;
+      margin: 1rem ;
+    }
+    .divider-img {
+     margin: 1rem ;
+     /*max-width: calc(68% - 1.25rem);*/
+     }
+    .icon-div {
+      padding: 1rem;
+      border-radius: 50%;
+      background-color: $Neon-Green;
+      position: absolute;
+      top: 90%;
+      left: calc(50% - 2rem);
+      .icon-dice {
+      height: 1.5rem;
+      width: 1.5rem;
+      object-fit: cover;
+      display: block; /* to center icon in her parent div */
+    }
+    .icon-dice:hover{
+      box-shadow: 5px 5px 50px 10px $Neon-Green ;
+    }
+  }
+  }
+
+  footer{
+    position: absolute;
+    top: 95%;
+    color: white;
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: $Neon-Green; }
+  }

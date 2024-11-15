@@ -1,0 +1,88 @@
+/* ### Primary colors*/
+/* ### Neutral colors*/
+/* font weight  */
+/* font size  - Font size (quote): 28px */
+/*13px */
+/* 28px */
+/* ==========================
+   Global Reset and Base Styles
+========================== */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  font-size: 1.75rem;
+  font-weight: 800;
+  text-align: center;
+  text-wrap: pretty;
+  background-color: hsl(218, 23%, 16%);
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+
+.main-container {
+  max-width: max(40%, 20.5rem); /* take 328px notice mobile--> 375px */
+  padding: 2rem 2rem 3rem 2rem;
+  background-color: hsl(217, 19%, 24%);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative; /* to positione dice icon */
+}
+.main-container #advice_id {
+  color: hwb(150 32% 0%);
+  font-size: 0.8125rem;
+  font-weight: 500;
+  letter-spacing: 3px;
+  font-size: 0.8125rem;
+  text-transform: uppercase;
+}
+.main-container #advice_text {
+  color: hsl(193, 38%, 86%);
+  font-size: 1.75rem;
+  font-weight: 500;
+  margin: 1rem;
+}
+.main-container .divider-img {
+  margin: 1rem;
+  /*max-width: calc(68% - 1.25rem);*/
+}
+.main-container .icon-div {
+  padding: 1rem;
+  border-radius: 50%;
+  background-color: hwb(150 32% 0%);
+  position: absolute;
+  top: 90%;
+  left: calc(50% - 2rem);
+}
+.main-container .icon-div .icon-dice {
+  height: 1.5rem;
+  width: 1.5rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block; /* to center icon in her parent div */
+}
+.main-container .icon-div .icon-dice:hover {
+  box-shadow: 5px 5px 50px 10px hwb(150 32% 0%);
+}
+
+footer {
+  position: absolute;
+  top: 95%;
+  color: white;
+}
+footer .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+footer .attribution a {
+  color: hwb(150 32% 0%);
+}/*# sourceMappingURL=style.css.map */
