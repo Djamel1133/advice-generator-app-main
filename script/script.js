@@ -27,4 +27,3 @@ document.addEventListener('DOMContentLoaded', function() {
     // Add event listener to icon-dice to get new advice
     icon_dice.addEventListener('click', getNewAdvice);
   });
-  
